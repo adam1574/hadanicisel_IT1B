@@ -10,11 +10,13 @@ namespace hadanicisel_IT1B
             Random random = new Random();
             int Nahcislo = random.Next(1, 100);
             int tipcislo;
+            int cislo = ;
+            int Tcislo1;
             bool neuhodl = true;
             Console.WriteLine("hádání čísla");
             Console.WriteLine("..............");
-            Console.WriteLine($"myslim si cislo od 1 do 100");
-            while (true)
+            Console.WriteLine($"napis cisla {cislo}:");
+            while (neuhodl)
 
             {
                 
@@ -23,22 +25,22 @@ namespace hadanicisel_IT1B
                 if (tipcislo < Nahcislo)
                 {
                     Console.WriteLine("to je malo");
-
                 }
 
                 else if (tipcislo > Nahcislo)
                 {
                     Console.WriteLine("to je moc");
-
                 }
                 else
+
                 {
                     Console.WriteLine("TREFA!!!!!!");
+                    neuhodl = false;
                 }
+
 
 
             }
-            
             
         }
     }
